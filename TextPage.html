@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML><HEAD><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	 <TITLE>Text Page</TITLE> <LINK href="images/cnz01main.css" 
+rel="stylesheet" type="text/css"> <LINK href="images/cnz01outline.css" 
+rel="stylesheet" type="text/css"> 
+<SCRIPT type="text/javascript">
+    function doZoom(size) {
+        document.getElementById('zoom').className = "black_12_zhengwne" + size;
+    }    
+</SCRIPT>
+ 
+<STYLE>
+.h14l24 {FONT-SIZE: 14px; LINE-HEIGHT: 24px;COLOR: #000000;  TEXT-DECORATION: none;}
+.black_12_zhengwne{font-size: 12px; line-height: 24px;COLOR: #000000;  TEXT-DECORATION: none;}
+
+.black_12_zhengwne1{font-size:12px;line-height: 24px;COLOR: #000000;  TEXT-DECORATION: none; }
+.black_12_zhengwne1 p{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 span{font-size:12px;line-height: 24px;  }
+.black_12_zhengwne1 div{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 strong{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 table{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 tr{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 td{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 font{font-size:12px;line-height: 24px; }
+
+.black_12_zhengwne2{font-size:14px;line-height: 24px;COLOR: #000000;  TEXT-DECORATION: none;}
+.black_12_zhengwne2 span{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 p{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 div{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 strong{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 table{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 tr{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 td{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 font{font-size:14px;line-height: 24px; }
+
+.black_12_zhengwne3{font-size:16px; line-height: 24px;COLOR: #000000;  TEXT-DECORATION: none;}
+.black_12_zhengwne3 p{font-size:16px;line-height: 24px;}
+.black_12_zhengwne3 span{font-size:16px; line-height: 24px;  }
+.black_12_zhengwne3 div{font-size:16px;line-height: 24px; }
+.black_12_zhengwne3 strong{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 table{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 tr{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 td{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 font{font-size:16px;line-height: 24px; }
+
+</STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY onload="init(); preloadImages();">
+<SCRIPT language="JavaScript">
+    function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+        var nCurrIndex = _nCurrIndex || 0;
+        if (nCurrIndex == 0)
+            document.write("<span style='color:#007355'>1</span>&nbsp;");
+        else
+            document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;");
+
+        for (var i = 1; i < _nPageCount; i++) {
+            if (nCurrIndex == i)
+                document.write("<span style='color:#007355'>" + (i + 1) + "</span>&nbsp;");
+            else
+                document.write("<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + i + "." + _sPageExt + "\">" + (i + 1) + "</a>&nbsp;");
+        }
+        return "";
+    }
+
+    function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt) {
+        if (_nPageCount == null || _nPageCount <= 1) {
+            return;
+        }
+
+        var nCurrIndex = _nCurrIndex || 0;
+
+        if (_nPageCount == 2) {
+            if (nCurrIndex == 0) {
+                document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == 1) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\"" + _sPageName + "." + _sPageExt + "\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+            }
+        }
+        else {
+
+            if (nCurrIndex == 0) {
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == 1) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+            else if (nCurrIndex == (_nPageCount - 1)) {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+            }
+            else {
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex - 1) + "." + _sPageExt + "\">【上一页】</a>&nbsp;");
+                document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+                document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\"" + _sPageName + "_" + (nCurrIndex + 1) + "." + _sPageExt + "\">【下一页】</a>&nbsp;");
+            }
+        }
+
+    }
+</SCRIPT>
+ 
+<STYLE>
+ 
+       #navigation * {
+            padding:0; 
+            margin:0;
+			      z-index:5
+			
+        }
+        #navigation, #navigation li ul {
+            list-style-type:none;
+			      z-index:5;
+			      margin:0 auto;
+            line-height:30px;
+
+        } 
+        #navigation li { float:left; text-align:center; position:relative;
+        vertical-align:middle; line-height:30px;
+
+				 
+        }
+        #navigation li a {
+            display:block; 
+            text-decoration:none; 
+            color:#FFFFFF; 
+            width:75px; 
+        }
+        #navigation li a:hover {
+            color: #fff;
+			      text-decoration: underline;
+		
+			
+        }
+		#navigation li ul li,#navigation li ul li a{	
+			 background:#E2EFF7;
+       border-right: medium none; border-top: medium none; font-size: 12px; border-left: medium none; cursor: hand; 
+	     color: #4a4b4b; border-bottom: medium none; font-family: verdana, arial, helvetica, sans-serif; text-decoration: none;
+       width:100px; 
+		}
+        #navigation li ul li a:hover {
+            color:#FF7110;
+						text-decoration:none;
+        }
+        #navigation li ul {
+            display:none;
+            position:absolute; 
+            top:25px;
+            left:0;
+            margin-top:1px;
+            width:120px;
+        }
+        #navigation li ul li ul {
+            display:none;
+            position:absolute; 
+            top:0px;
+            left:88px; 
+            margin-top:0;
+            margin-left:1px;
+						text-align:center;
+            width:90px;
+        }
+		
+		body{font-size:12px; font-family:"宋体";margin:0 auto;padding:0;border:0; background:#E4F0F7 url(cnc5_bg.jpg) repeat-x; z-index:5;}
+
+.dhbox{
+	background:url(http://www.tib.cas.cn/images/1c.png) ;
+	border:1px solid #063771;
+	margin:0 auto;
+	width:1000px;
+	height:30px;
+	line-height:30px;
+	margin-bottom:2px;
+	font-size:12px;
+	font-family:"宋体";
+	font-style:normal;
+	color:#FFFFFF;
+	z-index:5;
+	 text-align:center;   /* 文字在父容器中水平居中 */
+
+	
+}
+.dhbox a{
+	font-size:12px;
+	font-family:"宋体";
+	font-style:normal;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.dhbox a:hover {
+	color: #eb8022;
+	text-decoration: underline;
+}
+
+
+
+a  { color:#2B3E68 ;text-decoration: none;}
+a:hover{
+	color:#363636;
+	text-decoration:underline;
+}
+#tplink span { padding:7px 14px 0px 14px; background:url(cnz01tdot.gif) top left no-repeat; color:#797979; font-size:12px; height:100%;}
+#tplink span a { color:#797979; font-size:12px; text-decoration:none;}
+#tplink span a:hover { color:#1c7deb;}
+
+</STYLE>
+ <LABEL id="userip" style="display: none;">
+<SCRIPT src="images/getip.htm"></SCRIPT>
+</LABEL> 
+<SCRIPT type="text/javascript">
+
+    function displaySubMenu(li) {
+        var subMenu = li.getElementsByTagName("ul")[0];
+        subMenu.style.display = "block";
+    }
+    function hideSubMenu(li) {
+        var subMenu = li.getElementsByTagName("ul")[0];
+        subMenu.style.display = "none";
+    }
+
+</SCRIPT>
+ 
+<TABLE width="1000" height="26" align="center" background="images/cnz01topbg.gif" 
+border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="14">   &nbsp;  </TD>
+    <TD width="634" id="tplink"><SPAN><A href="http://www.cas.cn/" target="_blank">中国科学院 
+          </A>    </SPAN>       <SPAN><A href="mailto:tib_zh@tib.cas.cn" target="_blank"> 
+          所长信箱     </A>    </SPAN>       <SPAN><A href="http://english.tib.cas.cn/" 
+      target="_top">English     </A>    </SPAN>       <SPAN><A href="http://www.tib.cas.cn/qt/wzdt/" 
+      target="_top">网站地图     </A>    </SPAN>       <SPAN><A href="http://www.tib.cas.cn/gkjj_103941/llwm/" 
+      target="_top">     联系我们     </A>    </SPAN>   </TD>
+    <TD width="352" align="right">
+      <TABLE width="263" height="26" background="" border="0" cellspacing="0" 
+      cellpadding="0">
+        <FORM name="searchform" onsubmit="return search_check()" action="http://search.cas.cn/search" 
+        method="post" 
+target="_top"></FORM><INPUT name="channelid" type="hidden" value="38942"> 
+                        <INPUT name="option" type="hidden" value="ideosingle">   
+                      <INPUT name="searchword" type="hidden"> <INPUT name="preKeyword" type="hidden"> 
+                        
+        <TBODY>
+        <TR>
+          <TD align="right" colspan="3">
+            <TABLE border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD width="40%" align="right"><IMG width="26" height="21" src=""> 
+                           </TD>
+                <TD width="40%" align="left"><INPUT name="iptSword" class="input01" id="iptSword" onclick="javascript: if (this.value == '请输入关键字') this.value = ''" border="0" value="请输入关键字"></TD>
+                <TD align="left"><INPUT name="image" width="54" height="21" 
+                  type="image" src=""></TD></TR></TBODY></TABLE></TD></TR>
+<SCRIPT type="text/javascript">
+    function escapeTrs(str) {//转义trs关键字
+        var arr = new Array("\\\\", "!", "@", "#", "\\$", "\%", "\\^", "\&", "\\*", "\\(", "\\)", "\\_", "\\+", "\-", "\=", "\\{", "\\}", "\\|", "\\[", "\\]", ";", "'", ":", "\"", "\<", "\>", "\\?", "\,", "\\.", "\/");
+
+        for (var i = 0; i < arr.length; i++) {
+            var re = new RegExp(arr[i], "img");
+            str = str.replace(re, '\\' + arr[i]);
+        }
+
+        return str;
+    }
+    function dealKeywords(sword, relation) {
+        var sTemp = "";
+        var swordtemp = "";
+        var sArray;
+
+        if (sword.indexOf("*") < 0 && sword.indexOf("+") < 0 && sword.indexOf(")") < 0 && sword.indexOf("(") < 0 && sword.indexOf("\\") < 0) {
+            sword = escapeTrs(sword);
+            //不含trs关键字
+            sArray = sword.split(" ");//输入框空格处理,空格表示 relation 关系
+            for (var i = 0; i < sArray.length; i++) {
+                sTemp = sArray[i].replace(/^\s+|\s+$/g, "");//去掉sword前后空格
+                if (sTemp != "") {
+                    swordtemp += "'" + sTemp + "' " + relation + " ";/*加上''符号,处理trs带运算符的检索词报错的问题*/
+                }
+            }
+            if (swordtemp.lastIndexOf(" " + relation + " ") != -1)//去掉relation结尾
+            {
+                swordtemp = swordtemp.substring(0, swordtemp.length - relation.length - 2);
+            }
+        }
+
+        else//包含trs关键字
+        {
+            if (sword.indexOf("\\") != -1) {
+                var re = new RegExp("\\\\", "img");
+                sword = sword.replace(re, '\\\\');
+            }
+            swordtemp = "'" + sword + "'";
+        }
+        return swordtemp;
+    }
+
+    function search_check() {
+        var sword = document.getElementById("iptSword").value.replace(/^\s+|\s+$/g, "");
+
+        if (sword == '' || sword == '请输入关键字') {
+            alert('请输入关键字!');
+            return false;
+        } else {
+            document.searchform.searchword.value = dealKeywords(sword, "and");
+            document.searchform.preKeyword.value = encodeURI(document.getElementById("iptSword").value);//传参前进行编码
+            document.searchform.submit();
+        }
+    }
+</SCRIPT>
+                </TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE width="1000" height="150" align="center" style="border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;" 
+border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD><!-- <img width="1000" height="150" src="../../images/zwbt3.png" /> --> 
+    <TD height="150" align="right" background="images/zwbt3.png" 
+    valign="top" style="padding-right: 10px;"><!--     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1000" height="150">
+       
+  
+       <param name="movie" value="http://www.tib.cas.cn/images/banner2.swf" />
+       
+  
+       <param name="quality" value="high">
+       
+  
+       <param name="wmode" value="transparent">
+        
+  
+       <embed src="http://www.tib.cas.cn/images/banner2.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1000" height="150" RELATED="1">
+       </embed>
+       
+
+      </object>
+ --> 
+               </TD></TR></TBODY></TABLE><!--图片滚动-->               
+<DIV id="demo" style="margin: 0px auto; width: 1000px; overflow: hidden;">
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD align="center" id="demo1" valign="top" style="padding: 0px;">
+      <TABLE width="509" border="0" cellspacing="4" cellpadding="0">
+                             
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131222_4003086.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020170511532842405251.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131220_4002681.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109544892904413.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131219_4002094.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109545101405337.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131220_4002682.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020170511532327598196.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131220_4002671.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020170511532583297920.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131219_4002102.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109546139880970.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131227_4006472.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020170511532229126939.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131222_4003088.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020170511533181211337.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131223_4003098.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109547473717272.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201612/t20161229_4729325.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020161229328554540282.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131222_4003096.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109547646449054.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE bgcolor="#ababab" border="0" cellspacing="1" 
+              cellpadding="3"><TBODY>
+              <TR>
+                <TD bgcolor="#f8f8f9"><A href="http://www.tib.cas.cn/xwzx_104015/dsnb/201312/t20131222_4003095.html" 
+                  target="_blank"><IMG width="100" height="80" src="images/W020140109547781376703.jpg" 
+                  border="0"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+    <TD id="demo2"></TD>
+<SCRIPT>
+    var speed = 30;
+    demo2.innerHTML = demo1.innerHTML;
+    function Marquee() {
+        if (demo2.offsetWidth <= demo.scrollLeft) {
+            demo.scrollLeft -= demo1.offsetWidth;
+        } else {
+            demo.scrollLeft++;
+        }
+    }
+    var MyMar = setInterval(Marquee, speed);
+    demo.onmouseover = function () { clearInterval(MyMar) }
+    demo.onmouseout = function () { MyMar = setInterval(Marquee, speed) }   
+								</SCRIPT>
+                      </TR></TBODY></TABLE></DIV><!-- --> 
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class="dhbox">
+      <UL id="navigation" style="margin-left: -30px;">
+        <LI style="width: 120px;"><A style="width: 90px;" href="HomePage.html" 
+        target="_top">首页       </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">概况简介       </A>
+
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">人才队伍       </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">科研项目       </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">学术论文       </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">服务项目       </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">合作研究             </A></LI>
+        <LI style="text-align: center;">|      </LI>
+        <LI onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><A 
+        style="width: 110px; text-align: center;" href="List.html" 
+        target="_top">工作机会       </A></LI></UL></DIV></TD></TR></TBODY></TABLE>
+
+
+         <TABLE width="1000" align="center" bgcolor="#e4f0f7" border="0" cellspacing="0" 
+cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="100%" align="center" background="images/cnz01ot3_01.gif" 
+    valign="top">
+      <TABLE width="100%" background="images/cnz01ot4_01.gif" 
+      border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="20" height="46">&nbsp;</TD>
+          <TD width="100%" class="w12l20" valign="top" style="text-align: left; padding-top: 4px;">您现在的位置：<A 
+            title="首页" class="w12l20" 
+            href="HomePage.html">首页</A>&nbsp;&gt;&nbsp;<A title="SubTitle" 
+            class="w12l20" 
+            >Sub Title</A>&nbsp;&gt;&nbsp;<A title="Section Page" 
+            class="w12l20" 
+        href="List.html">Section List</A></TD></TR></TBODY></TABLE>
+      <TABLE width="1000" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR align="left" valign="top">
+          <TD width="6" align="left" valign="top" bgcolor="#e4f0f7"><IMG 
+            width="6" height="164" src="images/cnz01ot6.gif"></TD>
+          <TD width="100%" align="center">
+            <TABLE width="940" background="images/title_body02.gif" 
+            border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD width="100%" align="middle" valign="top">
+                  <TABLE width="100%" class="blu23l28" border="0" cellspacing="0" 
+                  cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD valign="top"><IMG width="940" height="16" src="images/title_body01.gif"></TD></TR>
+                    <TR>
+                      <TD width="100%" align="middle" valign="top" style='height: 35px; text-align: center; color: rgb(1, 50, 111); line-height: 35px; padding-top: 3px; font-family: "黑体"; font-size: 20px; font-weight: normal;'>Article Title</TD></TR></TBODY></TABLE>
+                  <TABLE width="100%" style="border-bottom-color: rgb(209, 209, 209); border-bottom-width: 0px; border-bottom-style: dotted;" 
+                  border="0" cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE width="90%" align="center" border="0" 
+                        cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD height="5"></TD></TR>
+                          <TR>
+                            <TD height="1" bgcolor="#c8d8f2"></TD></TR>
+                          <TR>
+                            <TD height="5"></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD>
+                        <TABLE width="90%" align="center" border="0" 
+                        cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD width="14%">&nbsp;</TD>
+                            <TD width="72%" height="40" align="center" class="black13" 
+                            valign="top" style="color: rgb(5, 122, 196); line-height: 25px; font-family: Verdana; font-size: 12px;">发布时间：yyyy-mm-dd<SPAN 
+                              id="auth">&nbsp;&nbsp;&nbsp;&nbsp;供稿部门：</SPAN></TD>
+<SCRIPT type="text/javascript">
+    var str = ""
+
+    if (str == "") {
+        document.getElementById("auth").style.display = "none";
+
+    }
+				  </SCRIPT>
+                                                               
+                            <TD width="14%" valign="top">
+                              <DIV align="right">
+                              <TABLE width="100%" border="0" cellspacing="0" 
+                              cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="5"></TD></TR>
+                                <TR>
+                                <TD align="right" 
+                              valign="top"></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  <TABLE width="90%" align="center" class="h14l24" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD class="h14l24" id="zoom" valign="top">
+                        <DIV class="TRS_Editor">
+                        <P 
+                        align="justify">　　<SPAN>生物设计中心是研究所整合所内计算生物学相关的研究组新成立的研究中心，是研究所重点支持的平台之一，致力于生物技术和信息技术交叉学科研究，通过计算机模型的建立分析和设计为工业生物技术新酶和新菌种的构建提供指导。中心主任马红武研究员长期从事计算系统生物学、生物网络分析和代谢工程方面的研究工作，已在在Bioinformatics、Molecular Systems Biology及Nucleic Acid Research 等高水平刊物上发表学术论文30余篇， SCI引用千余次，2014年获汤森路透高被引科学家奖。</SPAN>&nbsp;</P>
+                        
+                       
+                    <TR>
+                      <TD height="20"></TD></TR>
+                    <TR>
+                      <TD height="1" bgcolor="#c8d8f2"></TD></TR>
+                    </TBODY></TABLE>
+                  <DIV id="attach" style="display: none;">
+                  <TABLE width="84%" align="center" class="h14l24" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD valign="top">附件下载：
+                        <OL></OL></TD></TR></TBODY></TABLE></DIV>
+              <TR>
+                <TD height="20"></TD></TR>
+              <TR>
+                <TD height="1" bgcolor="#c1d9f4"></TD></TR></TBODY></TABLE></TD>
+          <TD width="6" align="left" valign="top" bgcolor="#e4f0f7"><IMG 
+            width="6" height="164" src="images/cnz01ot6.gif"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="1000"><IMG width="1000" height="9" src="images/cnz01ot8.gif"></TD></TR></TBODY></TABLE>
+<TABLE width="1000" height="8" align="center" bgcolor="#e4f0f7" border="0" 
+cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="1000"></TD></TR></TBODY></TABLE>
+<SCRIPT>
+    var s = '';
+    var c = '';
+    var a = document.getElementById("attach");
+    if (s.length > 0 || c.length > 0) {
+        a.style.display = '';
+    }
+</SCRIPT>
+ 
+<TABLE width="1000" height="3" align="center" bgcolor="#54b4f0" border="0" 
+cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="1000"></TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="1000" height="3" bgcolor="#1a76bb" colspan="4"></TD></TR>
+  <TR>
+    <TD width="285" height="100" align="center"><A href="http://www.cas.cn/" 
+      target="_blank"><IMG width="200" height="77" src="images/cas_logo.gif" 
+      border="0"></A></TD>
+    <TD width="715" align="left" class="cnphui12_20" style="color: rgb(0, 0, 0); line-height: 22px; letter-spacing: 1px; padding-top: 2px; font-family: Lucida Sans Unicode,Verdana; font-size: 12px;">Copyright 
+      2012 All Rights Reserved 中国科学院天津工业生物技术研究所　版权所有<BR>      
+      通讯地址：天津空港经济区西七道32号，邮编：300308<BR>电话：022-84861997/84861977，传真：022-84861926，邮箱：tib_zh(AT)tib.cas.cn<BR>京ICP备05002857号</TD></TR></TBODY></TABLE></BODY></HTML>
+
